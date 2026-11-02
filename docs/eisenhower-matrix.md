@@ -1,0 +1,6 @@
+# Eisenhower Matrix
+
+| | Urgent | Not Urgent |
+| --- | --- | --- |
+| **Important** | **Do (MVP)**<br>- Pull each dining court's daily menu from the Purdue Dining API<br>- Detect seafood items using the Fish and Shellfish allergen tags<br>- Filter out items whose ingredients contain meat (chicken base, chicken fat, beef, pork, gelatin)<br>- Send a Telegram notification with item, dining court, and meal<br>- Track already notified items in notified.txt to avoid duplicate pings | **Schedule (V2.0+)**<br>- Weekly lookahead that pings for the whole upcoming week<br>- Integrate into my existing personal food app<br>- Recommend the best time and location when multiple protein options exist<br>- User config file for custom keywords and favorite dining courts |
+| **Not Important** | **Delegate (Use a library)**<br>- JSON parsing (Gson)<br>- HTTP requests (java.net.http.HttpClient)<br>- Daily scheduling (cron)<br>- Message delivery (Telegram Bot API) | **Delete (Cut it)**<br>- Full weekly calorie and macro tracking<br>- Comparing dining court, meal swipe, and dining dollar options for value and variety<br>- Modeling every restaurant's weekend hours and closures<br>- Graphical user interface |
